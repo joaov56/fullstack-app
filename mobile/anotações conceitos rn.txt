@@ -1,0 +1,19 @@
+
+Componentes:
+    Dentro do React Native não podemos usar elementos HTML como div, footer, header
+    View pode ser uma Div ou qualquer elemento como um footer
+    As views não possuem valor semântico 
+    Text: p, span, strong, h1, h2, h3
+    Os Componentes não possuem estilização própria
+    Usamos Style Sheet para criar estilos (temporariamente)
+    Todos componentes possuem por padrão "display:flex"
+    Não existe HERANÇA de estilos
+AXIOS:
+    IOS com emulador: localhost
+    IOS com físico: IP da máquina
+    Android com Emulador: localhost usando (adb reverse)
+    Android com Emulador: 10.0.2.2 (Android Studio)
+    Android físico: IP da máquina
+
+Componentes Importantes: Flatlist serve para renderizar uma lista
+é mais prático que o map dentro da view

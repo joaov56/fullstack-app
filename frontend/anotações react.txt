@@ -1,0 +1,55 @@
+Babel:
+    Converter (transpilar) código do React para um código que o browser entenda
+Webpack:
+    Pra cada tipo de arquivo (.js, .css, .png) eu vou converter o código de uma maneira diferente
+Loaders: babel-loader (js), css-loader, image-loader, file-loader
+
+Comando para rodar o webpack "yarn webpack serve --mode development"
+
+Componentes tem que ter algo em volta dele para serem declarados para isso usamos o Fragment
+e ele não atrapalha na estilização
+
+
+CONCEITOS PRINCIPAIS:
+Componentização :
+    Conjunto isolado de HTML CSS e JS que pode ser usado em vários locais
+Propriedade:
+    Podemos declarar prorpiedades dos componentes para serem usadas onde nós quiser por exemplo
+    mudar oque aparece no componente de acordo com a página.
+    Ex:
+    <Header title="Página 1"/>
+
+    No componente:
+    function Header(props){
+        <h1>{props.title}</h1>
+    }
+
+    CHILDREN:
+        TUDO O QUE COLOCA DENTRO DO COMPONENTE
+        <Header>
+            <ul>
+                <li>A</li>
+                <li>B</li
+            </ul>
+        </Header>
+
+        function Header(props, children){
+            {children}
+        }
+
+    TODO ITEM A SER LISTADO EM TELA PRECISA DE UMA KEY
+    PARA FAZER UM ARRAY SER LISTADO PRECISA SER USADO O METODO MAP POIS ELE PERCORRE O ARRAY E RETORNA O ITEM
+Estado:
+    HOOK: useState que retorna um array com 2 posições
+    1. Variável com o seu valor inicial
+    2. Função para atualizarmos esse valor
+
+Imutabilidade:
+    Não podemos mudar uma variável de maneira direta, podemos apenas RECRIAR aquela informação da maneira que desejamos
+    O PUSH não respeita a Imutabilidade portanto não posso usar
+
+
+Contato com API:
+    AXIOS faz as requisições para a API e devolve para o React o retorno dela
+    useEffect é um HOOK utilizado para quando queremos atualizar uma informação ou simplesmente disparar uma função
+

@@ -1,0 +1,17 @@
+Métodos HTTP:
+    Get: Buscar informações no back-end
+    Post: Criar informação no back-end
+    Put/Patch(Apenas UMA informação): Alterar informação no back-end
+    Delete: Apagar informação no back-end
+
+Tipos de parametros:
+    Query Params: Filtros e paginação (url.com/ok?title=Parametro&pagina=2)
+    Route Params: Identificar recursos (url.com/:id)
+    Request Body: Conteúdo na hora de criar ou editar um recurso (JSON que vem do Front)
+
+Middlewares:
+    Interceptador de requisições que pode INTERROMPER totalmente a requisição ou
+    ALTERAR dados da requisição
+
+
+    NEXT= Próximo Middleware

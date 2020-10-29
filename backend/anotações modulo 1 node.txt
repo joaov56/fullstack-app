@@ -1,0 +1,76 @@
+Node: 
+O node permite utilizar o Javascript no Backend
+Rotas e integrações
+Não lidamos com eventos do usuário final
+Node não é uma linguagem ele é uma plataforma construída em cima do motor V8 do Chrome
+Comparável a PHP/Ruby/Python/Go
+
+NPM:
+Instalar bibliotecas de terceiros (Express, Moment e  etc)
+Fornecer bibliotecas
+Yarn é mais veloz que o NPM além de ter outras funcionalidades que o NPM não tem
+
+Características do Node:
+Arquitetura Event-Loop:
+    Baseada em eventos(rotas na maioria das vezes)
+    Callstack (uma pilha de função como se fosse um while) (Last in first out, primeira função é a ultima a ser executada)
+Node single-thread:
+    Ele só é executado em apenas UM núcleo do processador
+    Utiliza C++ por trás com libuv
+    Background threads
+Non-blocking I/O (aplicações em tempo real para receber requisições e não precisar enviar tudo de uma vez só)
+
+
+Express:
+    Sem opinião (sem estrutura fechada)
+    Ótimo pra iniciar
+    Micro-serviços
+
+Frameworks opinados:
+    AdonisJS (estudar depois)
+    NestJS
+
+
+
+
+COMO FUNCIONA UMA API REST:
+
+Fluxo da requisição e resposta:
+    Requisição feita por um cliente
+    Resposta retornada através de uma estrutura de dados
+    Cliente recebe uma resposta e processa o resultado
+
+As rotas utilizam métodos HTTP:
+    GET (receber)
+    POST (criar)
+    PUT (editar)
+    DELETE  (remover)
+
+Conteúdo da requisição:
+    GET(api.com/company(route)/1(param)/users(route)?page=2(query_params))
+    POST(api.com/company/1/users, Body APENAS no PUT ou POST)
+
+Benefícios:
+    Múltiplos clientes(front-end), mesmo backend
+    Prótocolo de comunicação padronizada
+
+
+HTTTP codes:
+    1xx: Informational
+
+    2xx: Sucess
+        200: Sucess
+        201: Created
+
+    3xx: Redirection
+        301:Moved Permanently
+        302: Moved
+    
+    4xx: Client Error
+        400: Bad Request
+        401: Unauthorized
+        404: Not Found
+    
+    5xx: Server Error
+        500: Internal Server Error
+        

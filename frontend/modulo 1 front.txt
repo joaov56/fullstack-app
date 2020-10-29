@@ -1,0 +1,32 @@
+O que é React?
+Biblioteca para construção de interfaces
+Utilizado para a construção de Single-Page-Aplications (Página nunca recarrega)
+React é um framework quando falamos sobre todo o seu ecossistema
+Tudo (CSS, HTML e TUDO) fica dentro do Javascript
+React/ReactJS(usando browser e a biblioteca React)/React Native(React + elementos nativos dos dispositivos)
+
+
+Vantagens:
+Organização do código:
+    Componentização (Diversas partes de funcionalidades separadas cada uma em um arquivo)
+Divisão de responsabilidades:
+    Back-end: Regra de negócios
+    Front-end: interfaces
+    Uma API, múltiplos clientes
+Programação declarativa vs Programação Imperativa:
+    No imperativo nós declaramos ao sistema cada passo e cada caso que pode ocorrer e isso gera muitos erros.
+    Na declarativa nós trabalhamos com o estado atual e não damos passos ao browser para mostrar as coisas apenas damos uma condição.
+
+
+JSX:
+    Escrever HTML dentro do Javascript 
+    Com React podemos criar nossos próprios elementos 
+
+Babel/Webpack:
+    O browser não entende todo esse código
+    O Babel converte o código em JS de uma forma que o browser entenda
+
+    O webpack possui várias funções:
+        Crião do bundle, arquivo com todo código da aplicação
+        Ensinar ao JavaScript como importar arquivos CSS, imagens e ecossistema
+        Live reload com Webpack Dev Server
